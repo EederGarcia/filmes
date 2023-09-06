@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'logo' ;
+  src: url(/_fotes/ToonyLine_PERSONAL_USE_ONLY.otf);
+}
+span{
+  color: #fff;
+}
+#rodape{
+  background-color: #04AA6D;
+   color: white;
+   position: fixed;
+   bottom: 0px;
+   width: 1000px;
+   height: 30px;
+   text-align: center;
+   padding-top: 20px;
+   right: 5px;
+  }
+body {
+  margin: 0;
+  background-color:  rgb(24, 29, 48);
+}
+.aulas{
+  font-size: 12px;
+font-weight: bold;
+  
+}
+
+#logo{
+   text-align: center;
+   font-family: "logo";
+   font-size: 50px;  
+   background-color: transparent; 
+}
+h2{
+  text-align: center;
+}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #0E1C36;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  li a.active {
+    background-color: #36435f;
+    color: rgb(255, 254, 254);  
+  }
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  /*STYLE DA CAIXA */
+
+  
+  .container {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.3s;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .title {
+    font-size: 16px;
+    color: #ffff;
+  }
+
+  .icon {
+    font-size: 20px;
+    background-color: #cfd5e4;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 5px;
+    border-top: 1px solid #ffffff;
+    transition: max-height 0.3s;
+    display: none;
+  }
+
+  .scroll-content {
+    max-height: 200px; /* Defina o tamanho máximo aqui */
+    overflow-y: auto;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s;
+  }
+
+  .container.active {
+    max-height: 300px; /* Defina o tamanho máximo aqui */
+  }
+
+  .container.active .icon {
+    transform: rotate(180deg);
+  }
+
+  .container.active .content {
+    max-height: 300px; /* Defina o tamanho máximo aqui */
+    transition: max-height 0.3s;
+    display: block;
+  }
+
+  .container.active .scroll-content {
+    transform: scaleY(1);
+    transition: transform 0.3s;
+  }
+  /*ESTYLO DO VIDEOS*/
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+
+  #pause-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  /*VIEO INCORPORADOS*/
+  bitmovin-stream {
+    text-align: center;
+    display:inline;
+    height: 100px;
+    width:  300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  /* incorporando video 
+
+  #cont {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  #target {
+    border: 1px dashed #f00;
+    padding: 10px;
+  }
+ */
+
+ #sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.nav-button {
+  margin-top: 5PX;
+  color:black;
+  background-color: rgba(255, 0, 0, 0.644);
+  border: none;
+  width: 100px;
+  height: 15px;
+  margin-bottom: 10px;
+  border-radius: 20PX;
+  cursor: pointer;
+  font-size: 10px;
+}
+  

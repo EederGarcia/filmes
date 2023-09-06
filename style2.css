@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+    @font-face {
+        font-family: "logo" ;
+        src: url('../_fontes/SoccerLeague-Italic.ttf') format('opentype');
+    }
+    :root{
+      --font-logo:logo;
+      --Cor-Noticia:rgb(6,170,73);
+    }
+
+
+    main{
+      text-align: center; 
+    }
+   /*Nav menu aparecer as três traços */
+
+
+   .icon{
+    text-decoration: none;
+    margin-top: 5px; 
+    margin-left: 10px;
+    font-weight: bolder;
+    color: #fff; 
+   }
+
+
+/*Imagens */
+img{
+  width: 30px;
+  position:relative;
+  display: inline-block;
+  text-align: left; 
+}
